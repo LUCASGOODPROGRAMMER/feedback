@@ -1,0 +1,120 @@
+.review-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.review-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.radio-container input {
+  display: none;
+}
+
+.radio-container svg {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.radio-container p {
+  font-size: 1rem;
+  margin: 0;
+  color: #555;
+}
+
+/* Emoji 1: Não gostei - vermelho */
+.radio-container:nth-child(1) input:checked + svg {
+  color: #e63946;
+}
+
+/* Emoji 2: Poderia ser melhor - laranja */
+.radio-container:nth-child(2) input:checked + svg {
+  color: #f4a261;
+}
+
+/* Emoji 3: Achei bom - amarelo */
+.radio-container:nth-child(3) input:checked + svg {
+  color: #6ab0e9;
+}
+
+/* Emoji 4: Adorei e recomendo - verde */
+.radio-container:nth-child(4) input:checked + svg {
+  color: #2a9d8f;
+}
+
+.radio-container:nth-child(1) input:checked ~ p {
+  color: #e63946;
+}
+
+.radio-container:nth-child(2) input:checked ~ p {
+  color: #f4a261;
+}
+
+.radio-container:nth-child(3) input:checked ~ p {
+  color: #6ab0e9;
+}
+
+.radio-container:nth-child(4) input:checked ~ p {
+  color: #2a9d8f;
+}
+
+/* Hover */
+.radio-container:hover {
+  background-color: #f9f9f9;
+  border-color: #ddd;
+}
+
+.form-control textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+}
+
+.form-control textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control textarea:focus {
+  border-color: #2a9d8f;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+#feedback{
+    align-self: start;
+    text-transform: lowercase;
+}

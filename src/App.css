@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* Container principal */
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Cabeçalho */
+.header {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #2f3542;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #57606f;
+  font-size: 1rem;
+}
+
+/* Formulário */
+.form-container p {
+  font-weight: 500;
+  color: #57606f;
+  margin-bottom: 1rem;
+}
+
+/* Componente atual */
+.inputs-container {
+  margin-bottom: 2rem;
+}
+
+/* Botões */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.actions button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.actions button:hover {
+  background: #1c7ed6;
+}
+
+/* Botão Voltar/Cancelar */
+.actions button[type="button"]:first-of-type {
+  background: #ced6e0;
+  color: #2f3542;
+}
+
+.actions button[type="button"]:first-of-type:hover {
+  background: #a4b0be;
+}
+
+/* fade-enter: estado inicial da entrada */
+.fade-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+/* fade-enter-active: animação de entrada */
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+/* fade-exit: estado inicial da saída */
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* fade-exit-active: animação de saída */
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+
+
